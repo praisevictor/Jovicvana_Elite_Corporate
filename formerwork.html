@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jovicvana Global Services Limited — general contracting, procurement, logistics and development supply across Nigeria." >
+    <title>
+        Jovicvana Global Services Limited | Contracting & Procurement
+    </title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        /* =========================================================
+           ROOT VARIABLES
+        ========================================================= */
+
+        :root {
+            --navy: #071827;
+            --navy2: #0d2437;
+            --cream: #f4f1e9;
+            --white: #ffffff;
+            --ink: #101820;
+            --muted: #68747d;
+            --line: #d7d6cf;
+            --gold: #c89b4b;
+            --gold2: #e1bb73;
+
+            --serif: Manrope, sans-serif;
+            --body: "DM Sans", sans-serif;
+            --mono: "Space Mono", monospace;
+        }
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--cream);
+            color: var(--ink);
+            font-family: var(--body);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* =========================================================
+           GLOBAL UTILITIES
+        ========================================================= */
+
+        .container {
+            width: min(1240px, calc(100% - 56px));
+            margin: 0 auto;
+        }
+
+        .mono {
+            font: 10px var(--mono);
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        /* =========================================================
+           HEADER / NAVIGATION
+        ========================================================= */
+
+        .header {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            background: rgba(7, 24, 39, 0.94);
+            backdrop-filter: blur(18px);
+
+            color: #ffffff;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+        }
+
+        .nav {
+            height: 82px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 36px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+
+            gap: 11px;
+            margin-right: auto;
+        }
+
+        .mark {
+            width: 41px;
+            height: 41px;
+
+            display: grid;
+            place-items: center;
+
+            border: 1px solid var(--gold);
+
+            color: var(--gold);
+
+            font: 700 11px var(--mono);
+        }
+
+        .brand strong {
+            display: block;
+
+            font: 800 13px var(--serif);
+            letter-spacing: 0.02em;
+        }
+
+        .brand small {
+            display: block;
+
+            margin-top: 2px;
+
+            color: #aeb9c1;
+
+            font: 8px var(--mono);
+            letter-spacing: 0.14em;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 27px;
+        }
+
+        .navlinks a {
+            color: #d4dce0;
+            font-size: 12px;
+
+            transition: color 0.2s ease;
+        }
+
+        .navlinks a:hover {
+            color: var(--gold2);
+        }
+
+        .navcta {
+            padding: 11px 17px;
+
+            border: 1px solid var(--gold);
+
+            font-size: 11px;
+            font-weight: 700;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease;
+        }
+
+        .navcta:hover {
+            background: var(--gold);
+            color: var(--ink);
+        }
+
+        .menu {
+            display: none;
+
+            background: none;
+            border: 0;
+
+            color: #ffffff;
+
+            font-size: 23px;
+
+            cursor: pointer;
+        }
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            position: relative;
+
+            min-height: 850px;
+            padding-top: 82px;
+
+            overflow: hidden;
+
+            background: var(--navy);
+            color: #ffffff;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 24, 39, 0.98) 0%,
+                    rgba(7, 24, 39, 0.9) 42%,
+                    rgba(7, 24, 39, 0.38) 100%
+                ),
+                url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2200&q=85")
+                    center / cover;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            right: -250px;
+            bottom: -360px;
+
+            border: 1px solid rgba(200, 155, 75, 0.18);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+
+            max-width: 980px;
+
+            padding: 150px 0 85px;
+        }
+
+        .eyebrow {
+            margin-bottom: 20px;
+            color: var(--gold2);
+        }
+
+        .hero h1 {
+            max-width: 950px;
+
+            margin: 0;
+
+            font: 800 clamp(50px, 7vw, 92px) / 0.95 var(--serif);
+
+            letter-spacing: -0.055em;
+        }
+
+        .hero h1 em {
+            color: var(--gold2);
+            font-style: normal;
+        }
+
+        .hero-copy {
+            max-width: 680px;
+
+            margin: 28px 0 34px;
+
+            color: #c8d0d5;
+
+            font-size: 17px;
+            line-height: 1.75;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px 21px;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn.gold {
+            background: var(--gold);
+            color: #111111;
+        }
+
+        .btn.outline {
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: #ffffff;
+        }
+
+        .btn.outline:hover {
+            border-color: var(--gold);
+        }
+
+        .hero-meta {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            max-width: 920px;
+
+            margin-top: 70px;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-meta div {
+            margin-right: 18px;
+            padding: 20px 18px 0 0;
+
+            border-right: 1px solid rgba(255, 255, 255, 0.13);
+        }
+
+        .hero-meta div:last-child {
+            border: 0;
+        }
+
+        .hero-meta b {
+            display: block;
+
+            font: 800 28px var(--serif);
+        }
+
+        .hero-meta span {
+            color: #aeb9c1;
+            font-size: 10px;
+        }
+
+        /* =========================================================
+           GENERAL SECTIONS
+        ========================================================= */
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 100px;
+        }
+
+        .kicker {
+            margin-bottom: 17px;
+            color: var(--gold);
+        }
+
+        .title {
+            margin: 0 0 20px;
+
+            font: 800 clamp(34px, 4vw, 58px) / 1.04 var(--serif);
+
+            letter-spacing: -0.045em;
+        }
+
+        .lead {
+            max-width: 720px;
+
+            color: var(--muted);
+
+            font-size: 16px;
+        }
+
+        /* =========================================================
+           COMPANY INTRO
+        ========================================================= */
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            margin-top: 8px;
+
+            border-top: 1px solid var(--ink);
+        }
+
+        .intro-card {
+            padding: 28px 25px 27px 0;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .intro-card:nth-child(odd) {
+            border-right: 1px solid var(--line);
+        }
+
+        .intro-card:nth-child(even) {
+            padding-left: 25px;
+        }
+
+        .intro-card:nth-child(3),
+        .intro-card:nth-child(4) {
+            border-bottom: 0;
+        }
+
+        .intro-card .num {
+            color: var(--gold);
+            font: 11px var(--mono);
+        }
+
+        .intro-card h3 {
+            margin: 14px 0 7px;
+
+            font: 700 18px var(--serif);
+        }
+
+        .intro-card p {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+        /* =========================================================
+           SERVICES
+        ========================================================= */
+
+        .services {
+            background: #ffffff;
+        }
+
+        .section-top {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+
+            gap: 40px;
+
+            margin-bottom: 50px;
+        }
+
+        .section-note {
+            max-width: 290px;
+
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            border-top: 1px solid var(--ink);
+            border-bottom: 1px solid var(--ink);
+        }
+
+        .service {
+            min-height: 350px;
+
+            padding: 38px 30px 40px 0;
+
+            border-right: 1px solid var(--line);
+        }
+
+        .service:not(:first-child) {
+            padding-left: 30px;
+        }
+
+        .service:last-child {
+            border: 0;
+        }
+
+        .service-num {
+            color: var(--gold);
+            font: 10px var(--mono);
+        }
+
+        .service h3 {
+            margin: 36px 0 14px;
+
+            font: 800 27px / 1.08 var(--serif);
+        }
+
+        .service p {
+            max-width: 320px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .service ul {
+            padding: 0;
+            margin: 24px 0 0;
+
+            list-style: none;
+
+            color: #39434a;
+
+            font-size: 11px;
+        }
+
+        .service li {
+            margin: 8px 0;
+        }
+
+        .service li::before {
+            content: "↳";
+
+            margin-right: 8px;
+
+            color: var(--gold);
+        }
+
+        /* =========================================================
+           PROJECTS
+        ========================================================= */
+
+        .projects {
+            background: var(--navy);
+            color: #ffffff;
+        }
+
+        .projects .title {
+            color: #ffffff;
+        }
+
+        .projects .lead {
+            color: #aeb9c1;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 0.65fr;
+
+            gap: 18px;
+        }
+
+        .project-main {
+            min-height: 600px;
+
+            display: flex;
+            align-items: end;
+
+            padding: 34px;
+
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.82),
+                    transparent 55%
+                ),
+                url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=85")
+                    center / cover;
+        }
+
+        .project-side {
+            display: grid;
+            gap: 18px;
+        }
+
+        .project-mini {
+            min-height: 291px;
+
+            display: flex;
+            align-items: end;
+
+            padding: 28px;
+
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.8),
+                    transparent
+                ),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80")
+                    center / cover;
+        }
+
+        .project-mini:nth-child(2) {
+            background-image:
+                linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.8),
+                    transparent
+                ),
+                url("https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=80");
+        }
+
+        .project-label {
+            color: var(--gold2);
+
+            font: 9px var(--mono);
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .project-main h3 {
+            margin: 8px 0;
+
+            font: 800 31px var(--serif);
+        }
+
+        .project-main p,
+        .project-mini p {
+            margin: 0;
+
+            color: #d1d8dc;
+
+            font-size: 11px;
+        }
+
+        .gallery-link {
+            display: inline-block;
+
+            margin-top: 16px;
+
+            color: var(--gold2);
+
+            border-bottom: 1px solid var(--gold);
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        /* =========================================================
+           PROCESS
+        ========================================================= */
+
+        .process {
+            padding: 110px 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            border-top: 1px solid var(--ink);
+            border-bottom: 1px solid var(--ink);
+        }
+
+        .step {
+            padding: 30px 24px 30px 0;
+
+            border-right: 1px solid var(--line);
+        }
+
+        .step:not(:first-child) {
+            padding-left: 24px;
+        }
+
+        .step:last-child {
+            border: 0;
+        }
+
+        .step .num {
+            color: var(--gold);
+            font: 11px var(--mono);
+        }
+
+        .step h3 {
+            margin: 28px 0 8px;
+
+            font: 700 20px var(--serif);
+        }
+
+        .step p {
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+        /* =========================================================
+           TRUST SECTION
+        ========================================================= */
+
+        .trust {
+            padding: 80px 0;
+
+            background: #e8e5db;
+        }
+
+        .trust-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+        .trust-row p {
+            max-width: 670px;
+
+            font: 700 21px / 1.35 var(--serif);
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .badge {
+            padding: 10px 13px;
+
+            border: 1px solid #b9b7ae;
+
+            font: 9px var(--mono);
+        }
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact {
+            padding: 110px 0;
+
+            background: #ffffff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+
+            gap: 90px;
+        }
+
+        .contact h2 {
+            margin: 0 0 18px;
+
+            font: 800 55px / 1 var(--serif);
+
+            letter-spacing: -0.04em;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 18px;
+
+            margin-top: 34px;
+        }
+
+        .contact-info span {
+            display: block;
+
+            margin-bottom: 4px;
+
+            color: var(--gold);
+
+            font: 9px var(--mono);
+            text-transform: uppercase;
+        }
+
+        .contact-info strong {
+            font-size: 13px;
+        }
+
+        .form {
+            border-top: 1px solid var(--ink);
+        }
+
+        .field {
+            padding: 17px 0;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+        .field label {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--muted);
+
+            font: 9px var(--mono);
+            text-transform: uppercase;
+        }
+
+        .field input,
+        .field textarea,
+        .field select {
+            width: 100%;
+
+            border: 0;
+            outline: 0;
+
+            background: transparent;
+
+            color: var(--ink);
+
+            font-size: 14px;
+        }
+
+        .field textarea {
+            resize: vertical;
+        }
+
+        .submit {
+            width: 100%;
+
+            margin-top: 25px;
+            padding: 17px;
+
+            border: 0;
+
+            background: var(--navy);
+            color: #ffffff;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .submit:hover {
+            background: var(--navy2);
+            transform: translateY(-1px);
+        }
+
+        .note {
+            margin-top: 10px;
+
+            color: var(--muted);
+
+            font-size: 10px;
+        }
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        .footer {
+            padding: 38px 0;
+
+            background: var(--navy);
+            color: #ffffff;
+        }
+
+        .footer-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 25px;
+        }
+
+        .footer p,
+        .footer a {
+            color: #8f9ba4;
+
+            font-size: 10px;
+        }
+
+        /* =========================================================
+           REVEAL ANIMATION
+        ========================================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(22px);
+
+            transition: opacity 0.7s ease,
+                        transform 0.7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* =========================================================
+           TABLET
+        ========================================================= */
+
+        @media (max-width: 900px) {
+            .navlinks,
+            .navcta {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .navlinks.open {
+                position: absolute;
+
+                top: 82px;
+                left: 0;
+                right: 0;
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 18px;
+
+                padding: 25px 28px;
+
+                background: var(--navy);
+            }
+
+            .split,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service {
+                padding: 30px 0 !important;
+
+                border-right: 0;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .service:last-child {
+                border: 0;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-side {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-meta {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-meta div {
+                padding-bottom: 15px;
+
+                border-right: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+            }
+
+            .trust-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 600px) {
+            .container {
+                width: calc(100% - 36px);
+            }
+
+            .hero-content {
+                padding: 105px 0 70px;
+            }
+
+            .hero h1 {
+                font-size: 51px;
+            }
+
+            .hero-copy {
+                font-size: 14px;
+            }
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-card:nth-child(odd) {
+                border-right: 0;
+            }
+
+            .intro-card:nth-child(3) {
+                border-bottom: 1px solid var(--line);
+            }
+
+            .section-top {
+                display: block;
+            }
+
+            .section-note {
+                margin-top: 15px;
+            }
+
+            .project-main {
+                min-height: 430px;
+            }
+
+            .project-side {
+                grid-template-columns: 1fr;
+            }
+
+            .project-mini {
+                min-height: 250px;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact h2 {
+                font-size: 43px;
+            }
+
+            .footer-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HEADER
+    ========================================================= -->
+
+    <header class="header">
+        <div class="container nav">
+
+            <a class="brand" href="#home">
+                <span class="mark">JG</span>
+
+                <span>
+                    <strong>JOVICVANA GLOBAL</strong>
+                    <small>SERVICES LIMITED</small>
+                </span>
+            </a>
+
+            <nav class="navlinks" id="links">
+                <a href="#about">Company</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#process">How We Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a class="navcta" href="#contact">
+                REQUEST A QUOTE →
+            </a>
+
+            <button
+                class="menu"
+                id="menu"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================= -->
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content reveal">
+
+                    <div class="mono eyebrow">
+                        GENERAL CONTRACTING / PROCUREMENT / LOGISTICS
+                    </div>
+
+                    <h1>
+                        We turn
+                        <em>contract requirements</em>
+                        into delivered results.
+                    </h1>
+
+                    <p class="hero-copy">
+                        Jovicvana Global Services Limited is a Nigerian B2B
+                        and B2G general contractor and procurement supplier
+                        supporting government institutions, development
+                        organizations, NGOs and corporate clients with
+                        sourcing, supply, logistics and project execution.
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn gold" href="#contact">
+                            START A CONVERSATION →
+                        </a>
+
+                        <a class="btn outline" href="#projects">
+                            VIEW OUR WORK
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+
+                        <div>
+                            <b>B2G</b>
+                            <span>Government & public sector</span>
+                        </div>
+
+                        <div>
+                            <b>B2B</b>
+                            <span>Commercial supply</span>
+                        </div>
+
+                        <div>
+                            <b>NGO</b>
+                            <span>Development projects</span>
+                        </div>
+
+                        <div>
+                            <b>NG</b>
+                            <span>Kogi & nationwide delivery</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT / COMPANY
+        ====================================================== -->
+
+        <section class="section" id="about">
+
+            <div class="container split reveal">
+
+                <div>
+                    <div class="mono kicker">
+                        01 / THE COMPANY
+                    </div>
+
+                    <h2 class="title">
+                        A contractor built around the scope of the assignment.
+                    </h2>
+                </div>
+
+                <div>
+
+                    <p class="lead">
+                        Jovicvana does not operate like a conventional retail
+                        business with one fixed product line. Its work is
+                        driven by contract requirements, project
+                        specifications and client needs.
+                    </p>
+
+                    <div class="intro-grid">
+
+                        <article class="intro-card">
+                            <div class="num">01</div>
+
+                            <h3>
+                                Government procurement
+                            </h3>
+
+                            <p>
+                                Support for Federal, State and Local
+                                Government requirements.
+                            </p>
+                        </article>
+
+                        <article class="intro-card">
+                            <div class="num">02</div>
+
+                            <h3>
+                                Development supply
+                            </h3>
+
+                            <p>
+                                Third-party vendor support for donor and
+                                community programs.
+                            </p>
+                        </article>
+
+                        <article class="intro-card">
+                            <div class="num">03</div>
+
+                            <h3>
+                                Wholesale sourcing
+                            </h3>
+
+                            <p>
+                                Bulk commercial procurement for institutional
+                                and corporate clients.
+                            </p>
+                        </article>
+
+                        <article class="intro-card">
+                            <div class="num">04</div>
+
+                            <h3>
+                                Logistics
+                            </h3>
+
+                            <p>
+                                Coordinated movement and delivery across
+                                project locations.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+
+        <section class="section services" id="services">
+
+            <div class="container reveal">
+
+                <div class="section-top">
+
+                    <div>
+
+                        <div class="mono kicker">
+                            02 / WHAT WE DO
+                        </div>
+
+                        <h2 class="title">
+                            Capability that follows the contract.
+                        </h2>
+
+                        <p class="lead">
+                            Our service lines are broad because procurement
+                            requirements are broad.
+                        </p>
+
+                    </div>
+
+                    <p class="section-note">
+                        From institutional supplies and operational vehicles
+                        to agricultural project materials and basic civil
+                        works.
+                    </p>
+
+                </div>
+
+                <div class="service-grid">
+
+                    <article class="service">
+
+                        <div class="service-num">
+                            01 — PUBLIC SECTOR
+                        </div>
+
+                        <h3>
+                            Government & Public Contracts
+                        </h3>
+
+                        <p>
+                            Procurement and general contracting support for
+                            public institutions and government programmes.
+                        </p>
+
+                        <ul>
+                            <li>Office & institutional materials</li>
+                            <li>Operational vehicles</li>
+                            <li>Equipment & general goods</li>
+                            <li>Basic civil works</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-num">
+                            02 — DEVELOPMENT
+                        </div>
+
+                        <h3>
+                            NGO & Development Supply
+                        </h3>
+
+                        <p>
+                            Third-party supply support for international
+                            development, agriculture and rural empowerment
+                            programmes.
+                        </p>
+
+                        <ul>
+                            <li>Agricultural project materials</li>
+                            <li>Tools & equipment</li>
+                            <li>Community project supplies</li>
+                            <li>Field logistics</li>
+                        </ul>
+
+                    </article>
+
+
+                    <article class="service">
+
+                        <div class="service-num">
+                            03 — COMMERCIAL
+                        </div>
+
+                        <h3>
+                            Wholesale & Logistics
+                        </h3>
+
+                        <p>
+                            Bulk sourcing, commercial procurement and delivery
+                            coordination for corporate and institutional
+                            clients.
+                        </p>
+
+                        <ul>
+                            <li>Bulk sourcing</li>
+                            <li>Supplier coordination</li>
+                            <li>Transport & delivery</li>
+                            <li>Nationwide distribution</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section class="section projects" id="projects">
+
+            <div class="container reveal">
+
+                <div class="section-top">
+
+                    <div>
+
+                        <div class="mono eyebrow">
+                            03 / PROJECTS & CONTRACTS
+                        </div>
+
+                        <h2 class="title">
+                            The work should speak for the company.
+                        </h2>
+
+                        <p class="lead">
+                            This gallery is structured for verified contract
+                            photographs, project scopes, locations, dates and
+                            approved client information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="project-grid">
+
+                    <article class="project-main">
+
+                        <div>
+
+                            <div class="project-label">
+                                FEATURED PROJECT / REPLACE WITH VERIFIED PROJECT
+                            </div>
+
+                            <h3>
+                                Government Procurement & Supply
+                            </h3>
+
+                            <p>
+                                Use this panel for the actual project title,
+                                client, location, year and scope.
+                            </p>
+
+                            <a class="gallery-link" href="#contact">
+                                ADD PROJECT DETAILS →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="project-side">
+
+                        <article class="project-mini">
+
+                            <div>
+
+                                <div class="project-label">
+                                    DEVELOPMENT
+                                </div>
+
+                                <h3>
+                                    Community Project Support
+                                </h3>
+
+                                <p>
+                                    Verified project photography goes here.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-mini">
+
+                            <div>
+
+                                <div class="project-label">
+                                    LOGISTICS
+                                </div>
+
+                                <h3>
+                                    Bulk Supply & Delivery
+                                </h3>
+
+                                <p>
+                                    Show the delivery process and completed
+                                    supply.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROCESS
+        ====================================================== -->
+
+        <section class="section" id="process">
+
+            <div class="container reveal">
+
+                <div class="section-top">
+
+                    <div>
+
+                        <div class="mono kicker">
+                            04 / HOW WE WORK
+                        </div>
+
+                        <h2 class="title">
+                            From specification to delivery.
+                        </h2>
+
+                    </div>
+
+                    <p class="section-note">
+                        A clear process makes procurement easier to manage,
+                        document and deliver.
+                    </p>
+
+                </div>
+
+                <div class="process-grid">
+
+                    <div class="step">
+                        <div class="num">01</div>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            Review scope, specifications, quantities,
+                            timelines and delivery requirements.
+                        </p>
+                    </div>
+
+
+                    <div class="step">
+                        <div class="num">02</div>
+
+                        <h3>
+                            Source
+                        </h3>
+
+                        <p>
+                            Coordinate suitable suppliers and required goods,
+                            materials or equipment.
+                        </p>
+                    </div>
+
+
+                    <div class="step">
+                        <div class="num">03</div>
+
+                        <h3>
+                            Execute
+                        </h3>
+
+                        <p>
+                            Manage procurement, logistics and project
+                            requirements against the agreed scope.
+                        </p>
+                    </div>
+
+
+                    <div class="step">
+                        <div class="num">04</div>
+
+                        <h3>
+                            Deliver
+                        </h3>
+
+                        <p>
+                            Coordinate delivery to the client, corporate site
+                            or project location.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TRUST
+        ====================================================== -->
+
+        <section class="trust">
+
+            <div class="container trust-row reveal">
+
+                <p>
+                    Position the company around
+                    <strong>
+                        verified capability, documented performance and
+                        dependable delivery.
+                    </strong>
+                </p>
+
+                <div class="badges">
+                    <span class="badge">B2G</span>
+                    <span class="badge">B2B</span>
+                    <span class="badge">NGO SUPPLY</span>
+                    <span class="badge">LOGISTICS</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section class="contact" id="contact">
+
+            <div class="container contact-grid reveal">
+
+                <div>
+
+                    <div class="mono kicker">
+                        05 / CONTACT
+                    </div>
+
+                    <h2>
+                        Let's discuss the requirement.
+                    </h2>
+
+                    <p class="lead">
+                        Tell us what you need supplied, executed or
+                        delivered.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <div>
+                            <span>Operating base</span>
+
+                            <strong>
+                                Kogi State, Nigeria
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Coverage</span>
+
+                            <strong>
+                                Kogi State & across Nigeria
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Business</span>
+
+                            <strong>
+                                General Contracting • Procurement • Logistics
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="form" id="form">
+
+                    <div class="field">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required
+                            placeholder="Full name"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="organization">
+                            Organization
+                        </label>
+
+                        <input
+                            id="organization"
+                            name="organization"
+                            type="text"
+                            placeholder="Ministry / company / organization"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="name@company.com"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="phone">
+                            Phone
+                        </label>
+
+                        <input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            required
+                            placeholder="+234"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="requirement">
+                            Requirement
+                        </label>
+
+                        <select
+                            id="requirement"
+                            name="requirement"
+                        >
+                            <option>
+                                Government / Public Sector Contract
+                            </option>
+
+                            <option>
+                                Procurement & Supply
+                            </option>
+
+                            <option>
+                                NGO / Development Supply
+                            </option>
+
+                            <option>
+                                Wholesale Logistics
+                            </option>
+
+                            <option>
+                                Basic Civil Works
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="details">
+                            Project details
+                        </label>
+
+                        <textarea
+                            id="details"
+                            name="details"
+                            rows="5"
+                            required
+                            placeholder="Describe the scope, location, quantity or requirement"
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="submit"
+                        type="submit"
+                    >
+                        SUBMIT ENQUIRY →
+                    </button>
+
+                    <div
+                        class="note"
+                        id="msg"
+                    >
+                        Demo form — connect to the company's email/backend
+                        before launch.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-row">
+
+            <a class="brand" href="#home">
+
+                <span class="mark">
+                    JG
+                </span>
+
+                <span>
+                    <strong>JOVICVANA GLOBAL</strong>
+                    <small>SERVICES LIMITED</small>
+                </span>
+
+            </a>
+
+            <p>
+                © 2026 Jovicvana Global Services Limited.
+                All rights reserved.
+            </p>
+
+            <a href="#home">
+                BACK TO TOP ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
